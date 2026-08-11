@@ -81,9 +81,15 @@ export function Pricing() {
                 <p className="text-gray-500 dark:text-gray-400 h-12">{plan.description}</p>
               </div>
               
-              <div className="mb-8 flex items-baseline text-gray-900 dark:text-white">
-                <span className="text-5xl font-extrabold tracking-tight">${plan.price}</span>
-                <span className="text-xl text-gray-500 ml-1">/mo</span>
+              <div className="mb-8 flex flex-col justify-start items-start">
+                <div className="flex items-baseline text-gray-400 dark:text-gray-500 line-through mb-1">
+                  <span className="text-2xl font-bold tracking-tight">${plan.price}</span>
+                  <span className="text-lg ml-1">/mo</span>
+                </div>
+                <div className="flex items-baseline text-[#E53935] dark:text-[#EF5350]">
+                  <span className="text-5xl font-extrabold tracking-tight">Free</span>
+                  <span className="text-sm font-medium ml-2 px-2 py-1 bg-[#E53935]/10 text-[#E53935] dark:bg-[#EF5350]/10 dark:text-[#EF5350] rounded-full uppercase tracking-wider">Limited Time</span>
+                </div>
               </div>
               
               <ul className="space-y-4 mb-8 flex-grow">
@@ -95,13 +101,15 @@ export function Pricing() {
                 ))}
               </ul>
               
-              <Button 
-                variant={plan.isPopular ? 'default' : 'outline'} 
-                size="lg" 
-                className="w-full"
-              >
-                Get Started
-              </Button>
+              <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20to%20get%20started%20with%20MuscleHub%20Pricing%20Plans" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button 
+                  variant={plan.isPopular ? 'default' : 'outline'} 
+                  size="lg" 
+                  className="w-full"
+                >
+                  Get Started
+                </Button>
+              </a>
             </motion.div>
           ))}
         </div>

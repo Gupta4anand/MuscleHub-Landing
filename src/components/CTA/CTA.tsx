@@ -43,12 +43,16 @@ export function CTA() {
           variants={fadeUpVariant}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
-          <Button size="lg" className="bg-white text-[#E53935] hover:bg-gray-50 text-lg px-8">
-            Start Free Trial
-          </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8">
-            Book Demo
-          </Button>
+          <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-white text-[#E53935] hover:bg-gray-50 text-lg px-8">
+              Start Free Trial
+            </Button>
+          </a>
+          <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8">
+              Book Demo
+            </Button>
+          </a>
         </motion.div>
         
         <motion.p 

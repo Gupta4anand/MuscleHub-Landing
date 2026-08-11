@@ -49,7 +49,9 @@ export function Hero() {
             </motion.p>
             
             <motion.div variants={fadeUpVariant} className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="text-lg px-8 shadow-lg shadow-red-500/25">Book Demo</Button>
+              <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="text-lg px-8 shadow-lg shadow-red-500/25">Book Demo</Button>
+              </a>
               <Button size="lg" variant="outline" className="text-lg px-8">Download App</Button>
             </motion.div>
             

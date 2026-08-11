@@ -99,7 +99,9 @@ export function Navbar() {
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <Button variant="outline" className="hidden lg:inline-flex">Book Demo</Button>
+            <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-flex">
+              <Button variant="outline" className="w-full">Book Demo</Button>
+            </a>
             <Button>Download App</Button>
           </div>
 
@@ -143,7 +145,9 @@ export function Navbar() {
                 </a>
               ))}
               <div className="pt-4 flex flex-col gap-3">
-                <Button variant="outline" className="w-full justify-center">Book Demo</Button>
+                <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button variant="outline" className="w-full justify-center">Book Demo</Button>
+                </a>
                 <Button className="w-full justify-center">Download App</Button>
               </div>
             </div>
