@@ -52,7 +52,9 @@ export function Hero() {
               <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="text-lg px-8 shadow-lg shadow-red-500/25">Book Demo</Button>
               </a>
-              <Button size="lg" variant="outline" className="text-lg px-8">Download App</Button>
+              <a href="/MuscleHub.apk" download>
+                <Button size="lg" variant="outline" className="text-lg px-8">Download App</Button>
+              </a>
             </motion.div>
             
             {/* Stats */}

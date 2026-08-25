@@ -6,6 +6,7 @@ import { MainLayout } from './layouts/MainLayout';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { AccountDeletion } from './pages/AccountDeletion';
 
 export default function App() {
   const location = useLocation();
@@ -40,6 +41,7 @@ export default function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/account-deletion" element={<AccountDeletion />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

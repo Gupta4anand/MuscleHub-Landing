@@ -100,6 +100,7 @@ export function Footer() {
           </p>
           <div className="flex space-x-6 text-sm">
             <Link to="/privacy-policy" className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/account-deletion" className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">Account Deletion</Link>
             <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">Cookie Policy</a>
           </div>

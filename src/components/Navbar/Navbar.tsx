@@ -102,7 +102,9 @@ export function Navbar() {
             <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-flex">
               <Button variant="outline" className="w-full">Book Demo</Button>
             </a>
-            <Button>Download App</Button>
+            <a href="/MuscleHub.apk" download>
+              <Button>Download App</Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -148,7 +150,9 @@ export function Navbar() {
                 <a href="https://wa.me/918591119641?text=Hi%2C%20I%20want%20a%20demo%20for%20MuscleHub" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full justify-center">Book Demo</Button>
                 </a>
-                <Button className="w-full justify-center">Download App</Button>
+                <a href="/MuscleHub.apk" download onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full justify-center">Download App</Button>
+                </a>
               </div>
             </div>
           </motion.div>
